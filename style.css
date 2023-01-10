@@ -1,25 +1,113 @@
 body {
-  padding-top: 200px;
-  background-color: aqua;
-}
-
-#game {
-  width: 300px;
-  margin: 0 auto;
+  color: rgb(226, 239, 86);
+  background: linear-gradient(to bottom, darkslategray,black); /* Dark Gray - Black gradient */
+  font-family: sans-serif;
   text-align: center;
 }
 
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  width: 600px; /* Set the width of the instructions box */
+  color
+}
+
+
 table {
-  border: 1px solid black;
   border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 60px;
+  background: linear-gradient(to bottom right, #f44336, #9c27b0, #3f51b5); /* Red-purple-blue gradient */
 }
 
 td {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #333;
   text-align: center;
   vertical-align: middle;
-  font-size: 48px;
+  font-size: 96px;
   font-weight: bold;
-  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+/* Set the cell to a gray color when hovering over a cell */
+td:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  color: currentColor;
+  border: currentColor 1px solid;
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: darkblue;
+  color: azure;
+}
+
+
+
+/* Base styles for the mountains */
+.triangle {
+  position: fixed;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  bottom: 0;
+}
+
+/* Create a dark red triangle */
+.triangle.dark-red1 {
+  border-left: 0px solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 50vw solid rgb(87, 26, 26);
+}
+
+/* Create a dark orange triangle */
+.triangle.dark-orange1 {
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-bottom: 30vw solid rgb(131, 88, 12);
+  left: 10vw;
+}
+
+/* Create another dark red triangle */
+.triangle.dark-red2 {
+  border-left: 40vw solid transparent;
+  border-right: 40vw solid transparent;
+  border-bottom: 40vw solid rgb(87, 26, 26);
+  left: 50vw;
+  z-index: -2;
+}
+
+/* Create another dark orange triangle */
+.triangle.dark-orange2 {
+  border-left: 25vw solid transparent;
+  border-right: 25vw solid transparent;
+  border-bottom: 30vw solid rgb(131, 88, 12);
+  left: 50vw;
+
 }

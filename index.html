@@ -9,26 +9,48 @@
 
 </head>
 <body>
-  <div id="game">
-    <table>
-      <tr>
-        <td id="cell-1"></td>
-        <td id="cell-2"></td>
-        <td id="cell-3"></td>
-      </tr>
-      <tr>
-        <td id="cell-4"></td>
-        <td id="cell-5"></td>
-        <td id="cell-6"></td>
-      </tr>
-      <tr>
-        <td id="cell-7"></td>
-        <td id="cell-8"></td>
-        <td id="cell-9"></td>
-      </tr>
-    </table>
+
+ <h1>Tic-Tac-Toe</h1>
+  <p>To play, click on a cell to place an X or an O. The first player to get three in a row (horizontally, vertically, or diagonally) wins the game. If all of the cells are filled and there is no winner, the game is a draw.</p>
+
+<!-- The main game board -->
+
+
+<table id="board">
+  <!-- The first row cells-->
+  <tr>
+    <td id="cell-1" class="cell"></td> 
+    <td id="cell-2" class="cell"></td> 
+    <td id="cell-3" class="cell"></td> 
+  </tr>
+  <!-- The middle row of cells -->
+  <tr>
+    <td id="cell-4" class="cell"></td> 
+    <td id="cell-5" class="cell"></td> 
+    <td id="cell-6" class="cell"></td> 
+  </tr>
+  <!-- The bottom row of cells -->
+  <tr>
+    <td id="cell-7" class="cell"></td> 
+    <td id="cell-8" class="cell"></td> 
+    <td id="cell-9" class="cell"></td> 
+  </tr>
+</table>
+<!-- Start and Reset buttons -->
+<div id="buttons">
   
-    <button id="reset-button">Reset</button>
-  </div>
+  <button id="start-button">Start to play Tic Tac Toe!</button>
+  
+  <button id="reset-button">Reset</button>
+</div>
+
+<div class = "mountains">
+  <div class="triangle dark-red1"></div>
+  <div class="triangle dark-orange1"></div>
+  <div class="triangle dark-red2"></div>
+  <div class="triangle dark-orange2"></div>
+</div>
+
+
 </body>
 </html>
