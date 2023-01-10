@@ -9,4 +9,8 @@ hit the restart button anytime during gameplay.
 
 I put a lot of effort in the styling and the elements should resize with the viewport.  
 
-Have fun playing!  
+Have fun playing! 
+
+YOu can play the game here: https://mattdee87.github.io/Final-Project-for-CanCode-Javascript-Class/
+
+any questions please feel free to email me at mdenero87@gmail.com
